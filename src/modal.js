@@ -79,9 +79,6 @@ class Modal extends Component {
     if (this.props.blockScroll) {
       Modal.unblockScroll();
     }
-    if (isBrowser && !this.props.container) {
-      document.body.removeChild(this.container);
-    }
     document.removeEventListener('keydown', this.handleKeydown);
   };
 
